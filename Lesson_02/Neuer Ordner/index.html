@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /* по имени тэга */
+            /* h1 {
+                text-align: center
+            } */
+
+            /* по имени класса */
+            /* .bg-color {
+                background-color: azure;
+            } */
+
+            /* по id элемента */
+            /* #header {
+                font-size: 35px;
+            } */
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <title>CSS</title>
+    </head>
+    <body>
+        <h1>
+            Hello world!
+            <h2>Hello again</h2>
+        </h1>
+
+        <a href="http://www.google.com">Ссылка на Google</a>
+
+        <a href="http://www.youtube.com">Ссылка на Youtube</a>
+
+        <div>Какой-то <span>текст</span></div>
+
+        <!-- Блочный тэг по умолчанию div -->
+        <!-- Строчный тэг по умолчанию span -->
+
+        <!-- Семантический подход -->
+
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>My first Blog Post</h1>
+                <p class="p-color">Posted by John, 25.10.2021</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quo, maxime?
+                </p>
+                <p>
+                    <a href="/blog/1">Read more...</a>
+                </p>
+            </section>
+
+            <section>
+                <h1>My second Blog Post</h1>
+                <p class="p-color">Posted by John, 25.10.2021</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quo, maxime?
+                </p>
+                <p>
+                    <a href="/blog/2">Read more...</a>
+                </p>
+            </section>
+
+            <section class="bg-color">
+                <h1 id="header">My third Blog Post</h1>
+                <p class="p-color">Posted by John, 25.10.2021</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quo, maxime?
+                </p>
+                <p>
+                    <a href="/blog/1">Read more...</a>
+                </p>
+            </section>
+        </main>
+
+        <footer style="color: blue;" class="bg-color">
+            <p>&copy; 2023 My Blog</p>
+        </footer>
+
+        <!-- CSS -->
+        <!-- 
+                Как можно настроить стилистику для элемента ?
+            1. По имени тэга (настройку получат все тэги с данным названием);
+            2. По имени класса (настройку получат все тэги с данным классом);
+            3. По id элемента (настройку получит тэг с данным id).
+
+                Где можно настроить стилистику для элемента ?
+            1. inline стили (указываются в качестве значения атрибута style);            
+            2. internal стили (указываются в качестве контента тэга style);
+            3. external стили (указываются в отдельном файле).
+         -->
+    </body>
+</html>

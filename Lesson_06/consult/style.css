@@ -1,0 +1,66 @@
+form{
+    width: 50%;
+}
+.input_box{
+    width: 50%;
+}
+/*Это блок стиля устанавливает ширину блока ввода на 50%*/
+
+.input_box input{
+    border: 2px solid #2c3e50;  /*рамка*/
+    padding: 5px;
+}
+
+#form_save{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+#form_save+label{
+    display: inline-block;
+    width: 52px;  
+    height: 26px;
+    border-radius: 26px;
+    background-color: #95a5a6;
+    transition: background 0.5s;
+    position: relative;
+}
+/*этот блок стиля применяется к лейблу который находится сразу после
+ чекбокса #form_save, он определяет размеры радиус границы и фон лейбла ,
+ а так же анимацию перехода фона*/
+
+#form_save:focus+label{
+    border: 1px solid #2c3e50;
+    margin: -1px;
+}
+/*этот блок стиля применяется к лейблу когда чекбокс #form_save находится в  фокусе
+- он устанавливает границу и отступ, чтобы создать эффект активного элемента*/
+
+
+#form_save:checked+label{
+background-color: #27ae60;
+}
+
+
+#form_save+label::after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: left 0.5s;
+}
+/*этот блока стиля создает псевдоэлемент ::after  для лейбла , который
+представляет собой ползунок чекбокса. Он определяет его размеры, цвет и фон, положение
+и анимацию */
+
+#form_save:checked+label::after{
+    left: 28px;
+}
+/*этот блок стиля применяетсяк псевдоэлементу :after лейбла, когда чекбокс #form_save
+отмечен (отжат). Он изменяет положение ползунка чтобы сдвинулся вправо */

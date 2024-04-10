@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+    background-image: url(https://gas-kvas.com/grafic/uploads/posts/2023-10/1696425396_gas-kvas-com-p-kartinki-piratskii-korabl-9.jpg) ;
+}
+
+p{color: red;}
+p.green{
+    color: green;
+}
+#blue{color: blue;}
+.nth{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.block{
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+}
+.nth div:nth-child(even){
+    background-color: rgb(138, 138, 202);
+}
+.nth div:nth-child(odd){
+    background-color: rgb(168, 232, 203);
+}

@@ -1,0 +1,33 @@
+/* по имени тэга */
+h1 {
+    text-align: center;
+}
+
+/* по имени класса */
+.bg-color {
+    background-color: azure;
+}
+
+/* по id элемента */
+#header {
+    font-size: 35px;
+}
+
+footer {
+    font-size: 20px;
+}
+
+main .bg-color > p {
+    font-style: italic;
+}
+
+section {
+    border: 3px solid black; /* рамка */
+    margin: 10px 200px 30px 250px; /* внешний отступ */
+    padding: 0 20px 19px;
+    text-align: center;
+}
+
+.p-color {
+    color: rgb(0, 255, 255);
+}

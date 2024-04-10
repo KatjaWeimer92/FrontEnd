@@ -1,0 +1,17 @@
+.red-box{
+    background-color: red;
+    border-radius: 10px;
+}
+
+.midle{
+    width: 300px;
+    height: 300px;
+}
+
+.padding-midle{
+    padding: 20px;
+}
+
+.big-margin{
+    margin: 40px;
+}
