@@ -1,0 +1,19 @@
+#main{
+    width: 600px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#main div{
+    width: 140px;
+    height: 140px;
+    color: rgb(185, 122, 51);
+}
+
+        #myRedDiv{background-color: red;}
+        #myBlueDiv{background-color: blue;}
+        #myGreenDiv{background-color: green;}
+        #myPinkDiv{background-color: pink;}
+        #myBlackDiv{background-color: black;}
+        #myYellowDiv{background-color: yellow;}
